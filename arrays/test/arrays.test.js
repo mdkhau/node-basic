@@ -69,7 +69,7 @@ describe('Array exercises', () => {
     it('toStringWithSeparator', () => {
         const toTest = arrays.toStringWithSeparator;
         let output = toTest([4, 'foo', 10.1, 'bar'], ';');
-        expect(output).toEqual('4;foo;10.1;bar;');
+        expect(output).toEqual('4;foo;10.1;bar');
 
     });
 
@@ -104,8 +104,8 @@ describe('Array exercises', () => {
 
     it('sortStringArray', () => {
         const toTest = arrays.sortStringArray;
-        let arr = ['c', 'a', 'b'];
-        expect(toTest(arr)).toEqual(['a', 'b', 'c']);
+        let arr = ['c', 'a', 'ö', 'b', 3];
+        expect(toTest(arr)).toEqual([3, 'a', 'b', 'c', 'ö']);
     });
 
     it('sortNumericVector', () => {

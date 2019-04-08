@@ -7,7 +7,7 @@ Objects can store several values but the elements of an object have no order. Th
 
 There are many ways to implement these exercises. You can often either iterate the arrays with loops or use an existing `Array` method to accomplish the result. Feel free to use any way, and it is also a good idea to try several ways!
 
-1. Implement function `logArray` that outputs the elements of the array given. For example, for array `['cat', 'dog', 'ferret]` it should output:
+1. Implement function `logArray` that outputs the elements of the array given. For example, for array `['cat', 'dog', 'ferret']` it should output:
    ```console
    cat
    dog
@@ -37,7 +37,7 @@ There are many ways to implement these exercises. You can often either iterate t
 
 Implement all your functions in file `arrays.js`.
 
-You are implementing a Node.js module. In order to enable other moduels (files) to use the module, the module must **export** the objects it gives for others to use.
+You are implementing a Node.js module. In order to enable other modules (files) to use the module, the module must **export** the objects it gives for others to use.
 
 ### Exports
 You can export objects (functions, variables, classes etc) by defining the export name and the object to be exported like this:
@@ -57,7 +57,7 @@ module.exports = {
 ```
 
 ### Testing
-If you clone the exercise project, you can test your functions with the autamated tests included in the project. Just make sure that all dependencies have been installed:
+If you clone the exercise project, you can test your functions with the automated tests included in the project. Just make sure that all dependencies have been installed:
 ```console
 $ npm install
 $ npm test
