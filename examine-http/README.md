@@ -2,7 +2,7 @@
 
 Web applications are based on the client and server communicating with each other using the HTTP protocol.
 
-Implementing a server is rather simle with Node.js and the Express framework. In this exercise we are going to implement a small client and a small server to get familiar with what happpens under the hood of web applcations.
+Implementing a server is rather simle with Node.js and the Express framework. In this exercise we are going to implement a small client and a small server to get familiar with what happens under the hood of web applcations.
 
 ## Exercise
 
@@ -52,6 +52,13 @@ their values in to the user like in this example:
     * respond with status 400 if either username of password is missing
     * respond with status 200 and an object { user: _username_ } in JSON format if the username is "mark" and the password is "giraffe".
     * respond with status 403 in any other case.
+
+## Questions
+Answer these questions in a text file:
+1. What is the meaning of the  HTTP request types (_HTTP verbs_) GET, POST, PUT, and DELETE?  
+2. HTTP responses always include a status code. What are the possible response codes and what do they mean?
+3. How can parameters be sent in a GET request? How are they transferred in HTTP?
+4.  How can parameters be sent in a POST request? How are they transferred in HTTP?
 
 ## Instructions
 
