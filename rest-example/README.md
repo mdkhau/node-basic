@@ -65,7 +65,7 @@ Responses:
   - Response body: POI
 - 201: New POI created for id 
   - Response body: POI
-- 404: Id not found
+- 400: Invalid or missing POI data
 
 ### Delete POI
 ```
