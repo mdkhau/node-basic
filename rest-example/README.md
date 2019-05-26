@@ -77,7 +77,7 @@ Responses:
 
 ## Instructions
 
-- There is a mockup database implementation `db.js` that you can use in your server. The mockup database is not a real persistent storage, it will be reset every time the server is restarted.
+- There is a mockup database implementation `db.js` that you can use in your server. The mockup database is not a real persistent storage, it will be reset every time the server is restarted. You can find the documentation [here](docs/index.html).
 - Pay attention to the response codes and contents specified for different operations and situations. 
 - You can implement the base URL setting conveniently by using `express.Router`
 
