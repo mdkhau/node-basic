@@ -1,8 +1,71 @@
 let arrays; // = require('../demo/arrays');
 
 try {
-    arrays = require('../demo/arrays');
-    console.log('To test: demo/arrays.js');
+    arrays = {
+    logArray:function (array){
+        array.forEach(e=>console.log(e));
+    },
+        cloneArray: function(array){
+         let arar=[];
+            array.forEach(e=>arar.push(e));
+            return arar;
+        },
+        firstElement: function (array) {
+            return array[0];
+        },
+        lastElement: function (array) {
+            return array[array.length-1];
+        },
+        nFirstElements: function (array,n) {
+        if(n <=0 || typeof n==='undefined'){
+            return [];
+        }
+        return array.slice(0,n);
+        },
+        nLastElements: function (array,n) {
+            if(n <=0 || typeof n==='undefined' || array.length-1<n){
+                return [];
+            }
+            return array.splice(array.length-n, array.length);
+        },
+        toStringWithSeparator: function (array,n) {
+            return array.join(';');
+        },
+        sumSquaresOfVector: function (array) {
+            let arr= array.map(function (x) {
+                return Math.pow(x, 2);
+            });
+            let number=0;
+            arr.forEach(e=>number+=e);
+            return number;
+        },
+        averageOfVector: function (array) {
+        if(array.length===0){
+            return NaN;
+        }
+            let sum = array.reduce((a, b) => a + b);
+             let avg = sum / array.length;
+             return avg;
+        },
+        sortStringArray: function (array) {
+        return array.sort();
+        },
+        sortNumericVector: function (array) {
+            return array.sort((a,b)=>a-b);
+        },
+        sortObjectArray: function (object,key) {
+          return  object.sort(function(x,y){
+                if (x[key] < y[key])
+                return -1;
+                if (x[key] > y[key])
+                    return 1;
+                return 0;
+            });
+        },
+
+    };
+
+    console.log(arrays.logArray);
 } catch (e) {
     try {
         arrays = require('../arrays');
@@ -11,6 +74,7 @@ try {
         console.log('File arrays.js not found.');
     }
 }
+
 
 describe('Array exercises', () => {
 
